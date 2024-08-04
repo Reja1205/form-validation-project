@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Registration Form</title>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h2>User Registration Form</h2>
+      <form action="" name="myForm" onsubmit="return validate();">
+        <label for="name">Name:</label>
+        <input type="text" id="name" />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" />
+        <label for="phone">Phone Number:</label>
+
+        <input type="tel" id="phone" />
+        <label for="subject">Subject:</label>
+
+        <select id="subject">
+          <option value="0" selected>Select Your Subject</option>
+          <option value="1">HTML</option>
+          <option value="2">CSS</option>
+          <option value="2">BOOTSTRAP</option>
+          <option value="3">JAVA SCRIPT</option>
+          <option value="4">JAVA</option>
+        </select>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" />
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" />
+
+        <label for="terms">
+          <input type="checkbox" id="terms" />I agree to the
+          <a href="#">terms and conditions</a>
+        </label>
+
+        <p id="demo"></p>
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
