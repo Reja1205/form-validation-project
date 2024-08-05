@@ -5,7 +5,8 @@ function validate() {
   const subject = document.getElementById("subject").value;
   const password = document.getElementById("password").value;
   const confirmPassword = document.getElementById("confirmPassword").value;
-  const terms = document.getElementById("terms").value;
+  const terms = document.getElementById("terms").checked;
+  const submit = document.getElementById("submit");
 
   if (names.trim() === "") {
     showError("Name can not be empty");
@@ -40,12 +41,12 @@ function validate() {
     return false;
   }
 
-  if (!terms.checked) {
-    showError("Please check terms and condition");
+  if (!terms) {
+    showError("Please check the box");
     return false;
-  } else {
-    alert("Successfull");
   }
+
+  alert(" Congratulations!!! Form Successfully Submitted");
 
   function showError(message) {
     const errorElement = document.getElementById("demo");
